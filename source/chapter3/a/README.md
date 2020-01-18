@@ -1,5 +1,21 @@
+# 进入保护模式
 
-# freedos 运行 com 文件
+## pmtest1_1.asm 运行
+
+使用环境 ubuntu12.04 + bochs2.3.5
+
+pmtest1_1.asm 即为原书程序。
+
+```bash
+nasm pmtest1_1.asm -o pmtest1.bin
+cp ../../chapter2/linux/a.img .
+dd if=pmtest1.bin of=a.img bs=512 count=1 conv=notrunc
+bochs -f bochsrc_a
+```
+
+*注意* 第二步需要使用上一章生成的最终的 a.img 文件，因为pmtest1_1.asm 没有定义可引导标识 0x55aa
+![](chapter_2_in_to_protect_mode.png)
+## freedos 运行 com 文件
 
 使用环境 ubuntu16.04
 
