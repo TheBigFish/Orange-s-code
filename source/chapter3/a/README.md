@@ -77,3 +77,4 @@ boot: a
   - cd b:
   - pmtest1.com
 
+![](chapter_2_dos_run_com.png)
