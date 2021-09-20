@@ -37,7 +37,7 @@ floppyb: 1_44="pm.img", status=inserted
 boot: a
 ```
 5. 格式化 pm.img
-  因为现在 pm.img 上没有文件系统，需要格式化为 dos 文件系统
+  因为现在 pm.img 上没有文件系统，需要格式化未 dos 文件系统
   - bochs  -f  bochsrc
   - 6-c-回车
   - dos 启动,此时 pm.img 作为软驱加载到 b:
@@ -77,4 +77,3 @@ boot: a
   - cd b:
   - pmtest1.com
 
-![](chapter_2_dos_run_com.png)
