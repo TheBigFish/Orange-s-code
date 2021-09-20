@@ -1,4 +1,6 @@
 
+# 马上动手写一个最小的”操作系统“
+
 ## nasm 安装
 
 `sudo apt-get install nasm`

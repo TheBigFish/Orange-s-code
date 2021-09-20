@@ -19,6 +19,7 @@ bochs 2.35
 
 ## 路径说明
 
+```
 ├── README.md
     仓库说明文件
 ├── resource
@@ -30,3 +31,5 @@ bochs 2.35
     ├── chapter2
         章节笔记
     └── chapter3
+```
+
