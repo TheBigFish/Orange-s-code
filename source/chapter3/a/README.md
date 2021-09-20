@@ -1,4 +1,4 @@
-# 进入保护模式
+# 3.1 认识保护模式
 
 ## pmtest1_1.asm 运行
 
@@ -14,7 +14,9 @@ bochs -f bochsrc_a
 ```
 
 *注意* 第二步需要使用上一章生成的最终的 a.img 文件，因为pmtest1_1.asm 没有定义可引导标识 0x55aa
+
 ![](chapter_2_in_to_protect_mode.png)
+
 ## freedos 运行 com 文件
 
 使用环境 ubuntu16.04
@@ -59,10 +61,10 @@ boot: a
   - 使用 losetup将磁盘镜像文件虚拟成块设备
     sudo losetup /dev/loop1 pm.img
   
-  - mkdir /mnt/floopy
+  - mkdir /mnt/floppy
 
   - 挂载块设备
-    mount /dev/loop1 /mnt/floopy
+    mount /dev/loop1 /mnt/floppy
 
   - 复制文件
     sudo cp pmtest1.com /mnt/floppy/
